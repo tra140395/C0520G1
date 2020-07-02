@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>di chuyển ảnh</title>
+</head>
+<body onload="doReady()">
+<img id="naruto" src="naruto.jpg" style="position:absolute;left:0;top:0;"
+     height="100" width="80"/>
+<script>
+    function upArrow() {
+        var element = document.getElementById("naruto");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+
+    function downArrow() {
+        var element = document.getElementById("naruto");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+
+    function leftArrow() {
+        var element = document.getElementById("naruto");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+
+    function rightArrow() {
+        var element = document.getElementById("naruto");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+    }
+
+    function movie(evt) {
+        switch (evt.keyCode) {
+            case 38:
+                upArrow();
+                break;
+            case 40:
+                downArrow();
+                break;
+            case 37:
+                leftArrow();
+                break;
+            case 39:
+                rightArrow();
+                break;
+        }}
+
+        function doReady() {
+            window.addEventListener('keydown', movie);
+        }
+
+</script>
+</body>
+</html>

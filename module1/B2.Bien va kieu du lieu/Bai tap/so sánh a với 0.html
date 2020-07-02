@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so sánh a với 0</title>
+</head>
+<body>
+<input type="number" placeholder="nhập số cần kiểm tra:" id ="a">
+<button type="button" onclick="kiemTra()">kiểm tra</button>
+<script>
+    let a = document.getElementById("a");
+    function kiemTra() {
+        if (a.value > '0')
+            document.write("a lớn hơn 0");
+        else { if(a.value =='0')
+                    document.write("điên hay sao mà so sánh 0 với 0");
+               else
+                   document.write("a nhỏ hơn 0");}
+    }
+
+</script>
+</body>
+</html>

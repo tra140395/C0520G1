@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+    function isPrime() {
+        let num = parseInt(prompt("Nhập vào số: "));
+        let check = true;
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                check = false;
+            }
+        }
+        alert(check);
+    }
+
+    isPrime();
+</script>
+</body>
+</html>

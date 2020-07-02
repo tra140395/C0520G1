@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tra snt</title>
+</head>
+<body>
+<input type="number" placeholder="nhập số luong snt can in ra" id="number">
+<button type="button" onclick="kiemTra()">kiểm tra</button>
+<script>
+    let number = document.getElementById("number");
+    function kiemTra() {
+        let num = parseInt(number.value);
+        let count = 0;
+        for (let n = 2; count < num; n++) {
+            let check = true;
+            for (let i = 2; i < n; i++) {
+                if (n % i === 0)
+                    check = false;
+            }
+            if (check) {
+                count++;
+                alert(n);
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

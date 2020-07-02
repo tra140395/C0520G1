@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi nhit do again</title>
+</head>
+<body>
+nhập độ C
+<br>
+<input type ="number" placeholder="nhập độ C" id = o_C>
+<h3>nhiệt độ chuyển đổi được là:</h3>
+<br>
+<button type="button" onclick="quydoinhietdo()">quy đổi</button>
+<script>
+let o_C = document.getElementById("o_C");
+function quydoinhietdo() {
+    let o_F = parseFloat(o_C.value)/5*9+32;
+    alert("độ F quy đổi được là:"+ o_F);
+
+}
+
+</script>
+
+</body>
+</html>

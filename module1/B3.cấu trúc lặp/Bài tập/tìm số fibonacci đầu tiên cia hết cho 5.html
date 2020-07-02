@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm số</title>
+</head>
+<body>
+<script>
+    let dau = 0;
+    let cuoi = 1;
+    let sum = 0;
+    for (let i = 1; i > 0; i++) {
+        sum = dau + cuoi;
+        dau = cuoi;
+        cuoi = sum;
+        if (sum % 5 == 0) {
+            alert(sum);
+            break;
+        }
+
+    }
+</script>
+</body>
+</html>

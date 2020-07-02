@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<input type="number" placeholder="nhiệt độ cần đổi" id = "oC">
+<button type="button" onclick="quyDoi()">Quy đổi</button>
+<script>
+    let oC = document.getElementById("oC");
+    function quyDoi() {
+        oF = parseInt(oC.value) *(9/5) +32;
+        alert(oF+"oF");
+
+    }
+
+</script>
+</body>
+</html>

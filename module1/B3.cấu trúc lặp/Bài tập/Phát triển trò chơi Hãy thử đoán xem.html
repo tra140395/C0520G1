@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hãy thử đoán xem</title>
+</head>
+<body>
+<button type="button" onclick="choiGame()">Chơi game</button>
+<script>
+    let tuso;
+    let denso;
+
+    function choiGame() {
+        tuso = parseInt(prompt("nhập số:"));
+        denso = parseInt(prompt("đến số:"));
+        let rd = (Math.floor(Math.random() * (denso - tuso) + tuso));
+        let count = 0;
+        let check = false;
+        for (count; count < 3; count++) {
+            let doan = parseInt(prompt("số bạn dự đoán:"));
+            if (doan == rd) {
+                check = true;
+                break;
+            } else {
+                alert("nhập lại");
+            }
+        }
+        if (check == true)
+            alert("chúc mừng đoán trúng");
+        else
+            alert("đoan sai");
+    }
+</script>
+
+</body>
+</html>

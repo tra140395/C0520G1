@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra tuổi</title>
+</head>
+<body>
+<input type="number" placeholder="nhập số tuổi.." id="t">
+<button type="button" onclick="kiemTra()">kiểm tra</button>
+<script>
+    let t= document.getElementById("t");
+    function kiemTra() {
+        let a = parseInt(t.value);
+        if (a < 0)
+            alert("có ai âm tuổi đâu");
+        else {
+            if (a< 120)
+                alert("tuổi bằng "+a);
+            else
+                alert("có ai 120 tuổi đâu");
+        }
+
+    }
+
+</script>
+</body>
+</html>

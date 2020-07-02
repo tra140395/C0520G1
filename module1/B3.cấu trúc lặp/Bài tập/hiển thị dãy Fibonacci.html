@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in dãy fibonacci</title>
+</head>
+<body>
+<script>
+    // đề bài yêu cầu in nguyên dãy Fibonaci nên dẫn đến vòng lặp vô hạn, vậy nên sửa lại thành 50 số.
+    let dau = 0;
+    let cuoi = 1;
+    let sum = 1;
+    for (let i = 1; i < 50; i++) {
+        document.write(sum + " ");
+        sum = dau + cuoi;
+        dau = cuoi;
+        cuoi = sum;
+    }
+
+
+</script>
+
+</body>
+</html>

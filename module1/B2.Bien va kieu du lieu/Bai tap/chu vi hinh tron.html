@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chu vi hình tròn</title>
+</head>
+<body>
+nhập bán kính hình tròn:
+<input type="number" placeholder="nhập bán kính vào đây: " id="R">
+<br>
+<h2>chu vi hình tròn là:</h2>
+<button type="button" onclick="tinhtoan()">tính toán</button>
+<script>
+    let R = document.getElementById("R");
+    function tinhtoan() {
+        let C =(R.value)*2*3.14;
+        alert("chu vi hình tròn là: " + C);
+
+    }
+
+</script>
+
+</body>
+</html>

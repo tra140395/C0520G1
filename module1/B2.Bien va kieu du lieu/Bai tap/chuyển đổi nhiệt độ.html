@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi nhiệt độ</title>
+</head>
+<body>
+độ C
+<br>
+<input type ="number" placeholder="nhập độ C" id="oC">
+<br><br>
+<h2>nhiệt độ F quy đổi được là: </h2>
+<button type ="button" onclick="quydoinhietdo()">Quy Đổi</button>
+<script>
+    let do_C = document.getElementById("oC");
+    function quydoinhietdo(){
+   let do_F = parseFloat(do_C.value)/5 * 9 +32;
+   alert("Độ F là:" + do_F );
+    }
+
+</script>
+
+
+</body>
+</html>

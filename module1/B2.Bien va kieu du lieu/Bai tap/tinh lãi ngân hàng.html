@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lãi ngân hàng</title>
+</head>
+<body>
+ <input type="number" placeholder="nhập tiền gửi:" id="tiengoc">
+<input type="number" placeholder="nhập tháng:" id="month">
+<input type="number" placeholder="nhập phần trăm:" id="pt">
+<button type="button" onclick="tinhToan()">tính toán</button>
+<script>
+    let tiengoc = document.getElementById("tiengoc");
+    let sothang = document.getElementById("month");
+    let pt = document.getElementById("pt");
+
+    function tinhToan() {
+        let money = parseInt(tiengoc.value);
+        let month = parseInt(sothang.value);
+        let i = 1;
+        while (i <= month) {
+            money = money + money * (pt.value) / 100;
+            i = i + 1;
+        }
+        alert("số tiền cả lãi lẫn gốc là:" + money);
+    }
+
+</script>
+
+
+</body>
+</html>

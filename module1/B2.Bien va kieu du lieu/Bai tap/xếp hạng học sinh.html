@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xếp hạng học sinh</title>
+</head>
+<body>
+<input type="number" placeholder="nhập điểm kiểm tra:" id="a">
+<input type="number" placeholder="nhập điểm giữa kỳ:" id="b">
+<input type="number" placeholder="nhập điểm cuối kỳ:" id="c">
+<button type="button" onclick="tinhdtb()">kiểm tra</button>
+<script>
+    let diemktra = document.getElementById("a");
+    let diemgky = document.getElementById("b");
+    let diemcky = document.getElementById("c");
+
+    function tinhdtb() {
+        let dtb = (parseFloat(a.value) + parseFloat(b.value) + parseFloat(c.value)) / 3;
+        if (dtb >= 8.5)
+            alert(dtb + " em này học giỏi");
+        else {
+            if (dtb >= 7)
+                alert(dtb + " em này học khá");
+            else {
+                if (dtb >= 6)
+                    alert(dtb + " thằng này học hơi dốt");
+                else {
+                    if (dtb >= 0)
+                        alert(dtb + " học gì dốt vậy");
+                    else
+                        alert("nhập sai điểm ròi ấy ơi")
+                }
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>

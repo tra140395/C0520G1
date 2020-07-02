@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hình tròn</title>
+</head>
+<body>
+nhập bán kính:<br>
+<input type="number" placeholder="nhập bán kính vào đây:" id="R">
+<h1>diện tích hình tròn</h1>
+<br>
+<button type="button" onclick ="tinhdientich()">tính toán</button>
+<script>
+    let R= document.getElementById("R");
+    function tinhdientich() {
+        let S = parseFloat(R.value) * parseFloat(R.value)* 3.14;
+        alert("diện tích hình tròn là:" + S)
+
+    }
+
+</script>
+
+</body>
+</html>

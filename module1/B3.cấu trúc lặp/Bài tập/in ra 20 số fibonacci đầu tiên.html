@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20 số fibonacci đầu tiên</title>
+</head>
+<body>
+<script>
+    let dau = 0;
+    let cuoi = 1;
+    let sum = 1;
+    for (let i = 1; i <= 20; i++) {
+        document.write(sum + " ");
+        sum = dau + cuoi;
+        dau = cuoi;
+        cuoi = sum;
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hình vuông</title>
+</head>
+<body>
+   <input type="number" placeholder="nhập cạnh..." id="a">
+<button type="button" onclick="tinhToan()">tính toán</button>
+<script>
+    let a = document.getElementById("a");
+    function tinhToan() {
+        dtich = parseInt(a.value) * parseInt(a.value);
+        document.write("diện tich hình vuông là "+ dtich);
+
+    }
+
+</script>
+
+</body>
+</html>

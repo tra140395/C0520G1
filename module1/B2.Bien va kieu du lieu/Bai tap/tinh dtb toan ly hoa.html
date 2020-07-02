@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dtb toan ly hoa</title>
+</head>
+diemtoan
+<br>
+<input type = "number" placeholder ="nhap diem toan" id="diemtoan">
+<br>
+diemly
+<br>
+<input type = "number" placeholder ="nhap diem ly" id="diemly">
+<br>
+diemhoa
+<br>
+<input type = "number" placeholder ="nhap diem hoa" id="diemhoa">
+<br>
+<h3>điểm trung bình là:</h3>
+<button type="button" onclick="diemtrungbinh()">nhấn vào đây</button>
+<script>
+    let diemtoan = document.getElementById("diemtoan");
+    let diemly = document.getElementById("diemly");
+    let diemhoa = document.getElementById("diemhoa");
+    function diemtrungbinh(){
+        dtb = (parseInt(diemtoan.value) + parseInt(diemly.value) + parseInt(diemhoa.value)) / 3;
+        alert("diem trung binh la " + dtb);
+    }
+
+</script>
+
+
+
+</body>
+</html>

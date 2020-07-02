@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI CON người</title>
+
+</head>
+<body>
+<input type="number" placeholder="nhập cân nặng:" id="weight">
+<input type="number" placeholder="nhập chiều cao:" id="height">
+<button type="button" onclick="tinhToan()">tính toán</button>
+<script>
+ let weight = document.getElementById("weight");
+ let height = document.getElementById("height");
+ function tinhToan() {
+ let bMI = parseFloat(weight.value) / (parseFloat(height.value) * parseFloat(height.value));
+ alert('Chỉ số bMI của bạn là :' + bMI);
+ if (bMI <18.5)
+     alert('Gầy như chiếc lá');
+ else {
+     if (bMI <25)
+         alert('bình thường');
+     else {
+         if(bMI <3)
+             alert('hơi mập');
+         else
+             alert('Bạn mập như Pig');}
+ }}
+
+</script>
+
+</body>
+</html>

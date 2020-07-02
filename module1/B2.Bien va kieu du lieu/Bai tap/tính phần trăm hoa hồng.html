@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính hoa hồng theo phần trăm</title>
+</head>
+<body>
+<input type="number" placeholder="nhập doanh số bán hàng" id="ds">
+<button type="button" onclick="kiemTra()">tính hoa hồng</button>
+<script>
+    function kiemTra() {
+        let ds = document.getElementById("ds");
+        // hoa hồng là 10%.
+        let hoahong = ds.value * 10 / 100;
+        alert("hoa hồng của ông này là: " + hoahong);
+    }
+
+</script>
+
+</body>
+</html>

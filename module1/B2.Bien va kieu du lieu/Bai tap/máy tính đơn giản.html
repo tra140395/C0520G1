@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính đơn giản</title>
+</head>
+<body>
+<input type="number" placeholder="số thứ nhất" id="a">
+<input type="number" placeholder="só thứ hai" id="b">
+<br>
+<button type="button" onclick="tinhToan('add')">Add</button>
+<button type="button" onclick="tinhToan('sub')">Sub</button>
+<button type="button" onclick="tinhToan('mul')">Mul</button>
+<button type="button" onclick="tinhToan('div')">Div</button>
+<br>
+<script>
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    let kqua;
+
+    function tinhToan(operator) {
+        if (operator === "add") {
+            kqua = parseFloat(a.value) + parseFloat(b.value);
+            alert(kqua);
+        } else if (operator === "sub") {
+            kqua = parseFloat(a.value) - parseFloat(b.value);
+            alert(kqua);
+        } else if (operator === "mul") {
+            kqua = parseFloat(a.value) * parseFloat(b.value);
+            alert(kqua);
+        } else {
+            if (b.value !== "0") {
+                kqua = parseFloat(a.value) / parseFloat(b.value);
+                alert(kqua);
+            } else
+                alert("phép tính sai");
+
+
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>

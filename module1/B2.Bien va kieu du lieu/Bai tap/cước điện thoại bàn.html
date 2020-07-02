@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cước điện thoại bàn</title>
+</head>
+<body>
+<input type="number" placeholder="nhập số phút..." id="number">
+<button type="button" onclick="tinhToan()">tính toán</button>
+<script>
+    let number = document.getElementById("number");
+    let cuoc;
+
+    function tinhToan() {
+        if (parseInt(number.value) < 0)
+            alert("nhập sai rồi ấy");
+        else {
+            if (parseInt(number.value) <= 50) {
+                cuoc = 25000 + parseInt(number.value) * 600;
+                alert("cước của you là: " + cuoc);
+            } else {
+                if (parseInt(number.value) <= 200) {
+                    cuoc = 25000 + 50 * 600 + (parseInt(number.value) - 50) * 400;
+                    alert("cước của you là: " + cuoc);
+                } else {
+                    cuoc = 25000 + 50 * 600 + 150 * 400 + (parseInt(number.value) - 200) * 200;
+                    alert("cước của you là: " + cuoc);
+                }
+
+            }
+
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

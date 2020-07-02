@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra tam giác</title>
+</head>
+<body>
+<input type="number" placeholder="nhập cạnh a:" id="d">
+<input type="number" placeholder="nhập cạnh b:" id="e">
+<input type="number" placeholder="nhập cạnh c:" id="f">
+<button type="button" onclick="kiemTra()">kiểm tra</button>
+<script>
+    let d = document.getElementById("d");
+    let e = document.getElementById("e");
+    let f = document.getElementById("f");
+
+    function kiemTra() {
+        let a = parseInt(d.value);
+        let b = parseInt(e.value);
+        let c = parseInt(f.value);
+        let ab = a + b;
+        let bc = b + c;
+        let ac = a + c;
+        alert(ab);
+        alert(bc);
+        alert(ac);
+        if (a > 0)
+            if (b > 0)
+                if (c > 0)
+                    if (ab > c)
+                        if (bc > a)
+                            if (ac > b)
+                                alert("a,b,c là 3 cạnh tam giác");
+
+
+    }
+
+
+</script>
+</body>
+</html>

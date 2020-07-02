@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diện tích hcn a,b</title>
+</head>
+<body>
+<input type="number" placeholder="nhập cạnh a" id="a">
+<input type="number" placeholder="nhập cạnh b" id="b">
+<button type="button" onclick="tinhToan()">tính toán</button>
+<script>
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    let dich;
+    function tinhToan() {
+        dtich = parseInt(a.value) * parseInt(b.value);
+        alert("diện tích là " + dtich);
+
+    }
+
+</script>
+</body>
+</html>
